@@ -1,0 +1,78 @@
+<table class="table">
+  <tr>
+    <th>Pipe name</th>
+    <th>Build in</th>
+    <th>Example</th>
+  </tr>
+
+  <tr>
+    <td>DateTime Pipe</td>
+    <td>YES</td>
+    <td>
+      <div>
+        {{ today | date: 'dd.MM.yyyy HH:mm:ss'}}
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>UpperCasePipe</td>
+    <td>YES</td>
+    <td>
+      <div>
+        {{ name | uppercase }}
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>slice</td>
+    <td>YES</td>
+    <td>
+      <div>
+        {{ date | slice:0:10 }}
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Capitalize</td>
+    <td>YES</td>
+    <td>
+      <div>
+        {{ name1 | capitalize }}
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>LowerCasePipe</td>
+    <td>YES</td>
+    <td>
+      <div>
+        {{ name | lowercase }}
+      </div>
+    </td>
+  </tr>
+  <tr>
+   <td>relativeTime</td>
+    <td>NO</td>
+    <td>
+      <div>
+        <input type="number" [(ngModel)]="count">
+        {{ count | relativeTime}}
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>relativeTime</td>
+    <td>NO</td>
+    <td>
+      <div>
+        <input type="number" [(ngModel)]="count">
+        {{ count | pluralize: "second":"seconds" }}
+      </div>
+    </td>
+  </tr>
+
+</table>
